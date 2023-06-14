@@ -44,6 +44,9 @@ if(MSVC)
     )
     target_compile_definitions(${vld} PRIVATE $<$<CONFIG:Debug>:_DEBUG>)
     target_compile_options(${vld} PUBLIC $<$<CONFIG:RELEASE>:/Ob0>)
+    add_custom_command(TARGET ${vld} POST_BUILD TARGET
+        COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/vld.ini $(outdir)/vld.ini
+    )
 endif(MSVC)
 
 set_target_properties(${vld} PROPERTIES

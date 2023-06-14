@@ -576,6 +576,7 @@ bool CallStack::isInternalModule(const PWSTR filename) const
         endWith(filename, len, L"\\vcstartup\\src\\heap\\new_debug.cpp") ||
         endWith(filename, len, L"\\vcstartup\\src\\startup\\exe_common.inl") ||
         endWith(filename, len, L"\\vcstartup\\src\\startup\\exe_common.cpp") ||
+        endWith(filename, len, L"\\vcstartup\\src\\startup\\exe_main.cpp") ||
         endWith(filename, len, L"\\vcstartup\\src\\startup\\exe_winmain.cpp") ||
         endWith(filename, len, L"\\ucrt\\src\\appcrt\\heap\\align.cpp") ||
         endWith(filename, len, L"\\ucrt\\src\\appcrt\\heap\\malloc.cpp") ||
