@@ -2,6 +2,8 @@
 
 使用cmake编译vld，目前仅仅适配了win32
 
+项目的原始代码来自： https://github.com/KindDragon/vld
+
 cmake kit建议使用vs2015
 
 vs2019也可以，记得不要升级项目，因为vld的vs版本不能高于vs2015，cmake生成的vld项目指定使用的就是vs2015
